@@ -25,16 +25,22 @@ header h2 {
 
 /*Link Bar Styles / Header Styles */
 .link_bar {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: rgb(27, 27, 27);
+  padding: 5px 0;
 }
 .link_bar a {
   color: white;
   text-decoration: none;
   padding: 15px;
   font-size: 20px;
+}
+.link_bar a:hover {
+  background-color: rgb(66, 85, 255);
+  color: yellow;
+  transition: 0.3s;
 }
 
 /*Main Content Styles */
