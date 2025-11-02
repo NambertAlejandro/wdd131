@@ -5,7 +5,15 @@
   max-width: 840px;
   align-items: center;
 }
+header {
+  background-color: rgb(66, 85, 255);
+  color: white;
+  text-align: center;
+}
 
+main {
+  background-color: white;
+}
 /* Header Styles */
 header h2 {
   background-color: rgb(66, 85, 255);
