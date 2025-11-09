@@ -1,0 +1,95 @@
+@media screen and (max-width: 500px) {
+  header {
+    background-color: #00abe4;
+    padding: 10px;
+    color: #ffff;
+  }
+  header h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-left: 35px;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .link-bar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  #menu-toggle:checked + .menu-icon + .link-bar {
+    display: flex;
+  }
+
+  .link-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px;
+    transition: background 0.3s;
+  }
+
+  .link-bar a:hover {
+    background-color: #e9f1fa6c;
+    transform: scale(1.05);
+  }
+
+  .link-bar-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px 20px;
+  }
+}
+
+/*Main*/
+
+main {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.temples {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 840px;
+  margin: 0 auto;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.temples img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.temples figcaption {
+  text-align: center;
+  margin-top: 4px;
+}

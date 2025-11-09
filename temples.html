@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Picture Album</title>
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" />
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <meta
+      name="description"
+      content="A page with an album with temples pictures"
+    />
+    <meta name="author" content="Nambert Alejandro Silva Eleuterio" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="link-bar-flex">
+        <h2>Temple Album</h2>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="link-bar">
+          <a href="#">Home</a>
+          <a href="#">Old</a>
+          <a href="#">New</a>
+          <a href="#">Large</a>
+          <a href="#">Small</a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--Tittle-->
+      <h1>Home</h1>
+      <!--All of the Temples-->
+      <section class="temples">
+        <figure>
+          <img src="images/campinas.jpg" alt="Campinas Temple" />
+          <figcaption>Campinas Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/las-vegas.jpg" alt="Las Vegas Temple" />
+          <figcaption>Las Vegas Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/san-diego.jpg" alt="San Diego Temple" />
+          <figcaption>San Diego Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/roma.jpg" alt="Roma Italy Temple" />
+          <figcaption>Roma Italy Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/sao-paulo.jpg" alt="Sao Paulo Temple" />
+          <figcaption>São Paulo Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/kirtland.jpg" alt="Kirtland Temple" />
+          <figcaption>Kirtland Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/salt-lake.jpg" alt="Salt Lake Temple" />
+          <figcaption>Salt Lake Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/paris.jpg" alt="Paris France Temple" />
+          <figcaption>Paris France Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/accra-ghana.jpg" alt="Accra Ghana" />
+          <figcaption>Accra Ghana Temple</figcaption>
+        </figure>
+      </section>
+    </main>
+    <footer>
+      <p class="name">
+        &copy; <span id="currentyyear"></span>2025 | Nambert Alejandro Silva
+        Eleuterio
+      </p>
+      <p class="dates">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+      const lastModified = document.lastModified;
+      document.getElementById("lastModified").textContent = lastModified;
+    </script>
+  </body>
+</html>
