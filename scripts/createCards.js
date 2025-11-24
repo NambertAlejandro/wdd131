@@ -1,7 +1,7 @@
 // Seletores
 const container = document.querySelector("#temple-cards");
 
-// Função que cria os cards
+// Função que cria os cards.
 function createTempleCards(filteredTemples) {
   container.innerHTML = ""; // limpar antes de renderizar de novo
 
