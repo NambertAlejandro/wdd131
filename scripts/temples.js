@@ -57,3 +57,29 @@ const temples = [
   },
   // Add more temple objects here...
 ];
+temples.push(
+  {
+    templeName: "Rome Italy",
+    location: "Rome, Italy",
+    dedicated: "2019, March, 10",
+    area: 40000,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-66076.jpg",
+  },
+  {
+    templeName: "Salt Lake Utah",
+    location: "Salt Lake City, Utah, United States",
+    dedicated: "1893, April, 6",
+    area: 382207,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-65966.jpg",
+  },
+  {
+    templeName: "São Paulo Brazil",
+    location: "São Paulo, Brazil",
+    dedicated: "1978, November, 1",
+    area: 59246,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/sao-paulo-brazil-temple/sao-paulo-brazil-temple-46813.jpg",
+  }
+);

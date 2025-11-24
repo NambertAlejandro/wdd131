@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles/temples-large.css" />
     <script src="scripts/temples.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/createCards.js" defer></script>
+
     <meta
       name="description"
       content="My page is an album with temples pictures, there are 9 different temples with your pictures and names. "
@@ -28,11 +30,11 @@
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <ul class="link-bar">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Old</a></li>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Large</a></li>
-          <li><a href="#">Small</a></li>
+          <li><a id="home">Home</a></li>
+          <li><a id="old">Old</a></li>
+          <li><a id="new">New</a></li>
+          <li><a id="large">Large</a></li>
+          <li><a id="small">Small</a></li>
         </ul>
       </nav>
     </header>
@@ -40,64 +42,9 @@
       <!--Tittle-->
       <h1>Home</h1>
       <!--All of the Temples-->
-      <section class="temples">
-        <figure>
-          <img loading="lazy" src="images/campinas.jpg" alt="Campinas Temple" />
-          <figcaption>Campinas Temple</figcaption>
-        </figure>
-        <figure>
-          <img
-            loading="lazy"
-            src="images/las-vegas.jpg"
-            alt="Las Vegas Temple"
-          />
-          <figcaption>Las Vegas Temple</figcaption>
-        </figure>
-        <figure>
-          <img
-            loading="lazy"
-            src="images/san-diego.jpg"
-            alt="San Diego Temple"
-          />
-          <figcaption>San Diego Temple</figcaption>
-        </figure>
-        <figure>
-          <img loading="lazy" src="images/roma.jpg" alt="Roma Italy Temple" />
-          <figcaption>Roma Italy Temple</figcaption>
-        </figure>
-        <figure>
-          <img
-            loading="lazy"
-            src="images/sao-paulo.jpg"
-            alt="Sao Paulo Temple"
-          />
-          <figcaption>São Paulo Temple</figcaption>
-        </figure>
-        <figure>
-          <img loading="lazy" src="images/kirtland.jpg" alt="Kirtland Temple" />
-          <figcaption>Kirtland Temple</figcaption>
-        </figure>
-        <figure>
-          <img
-            loading="lazy"
-            src="images/salt-lake.jpg"
-            alt="Salt Lake Temple"
-          />
-          <figcaption>Salt Lake Temple</figcaption>
-        </figure>
-        <figure>
-          <img
-            loading="lazy"
-            src="images/paris.jpg"
-            alt="Paris France Temple"
-          />
-          <figcaption>Paris France Temple</figcaption>
-        </figure>
-        <figure>
-          <img loading="lazy" src="images/accra-ghana.jpg" alt="Accra Ghana" />
-          <figcaption>Accra Ghana Temple</figcaption>
-        </figure>
-      </section>
+      <div id="temple-cards"></div>
+
+      <div id="temple-cards"></div>
     </main>
     <footer>
       <p class="name">

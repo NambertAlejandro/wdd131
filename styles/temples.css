@@ -1,6 +1,6 @@
 @media screen and (max-width: 500px) {
   header {
-    background-color: #00abe4;
+    background-color: black;
     padding: 10px;
     color: #ffff;
   }
@@ -65,33 +65,56 @@
 
 /*Main*/
 
-main {
-  max-width: 840px;
-  margin: 0 auto;
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
+main h1 {
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
-.temples {
+
+/* General Container */
+#temple-cards {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  max-width: 840px;
-  margin: 0 auto;
-  margin-left: 25px;
-  margin-right: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
 }
-.temples img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-.temples figcaption {
+
+/* Each card */
+.temple-card {
+  background: #efefef;
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
   text-align: center;
-  margin-top: 4px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/*  hover */
+.temple-card:hover {
+  transform: TranslateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.temple-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* Paragraphs */
+.temple-card p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Image */
+.temple-card img {
+  width: 100%;
+  height: auto;
+  margin-top: 0.8rem;
+  border-radius: 6px;
+  object-fit: cover;
 }
