@@ -1,0 +1,176 @@
+/* --------------------------- */
+/* GLOBAL RESET + FONTS */
+/* --------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Inter:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --------------------------- */
+/* ROOT COLOR VARIABLES */
+/* --------------------------- */
+
+:root {
+  /* Brand Core */
+  --gold-primary: #e8c874;
+  --gold-secondary: #d9b968;
+  --gold-soft: #f2e6c9;
+
+  /* Backgrounds */
+  --bg-light: #fffdf7;
+  --bg-gradient-top: #fff6dd;
+  --bg-gradient-bottom: #fffdf7;
+
+  /* Typography */
+  --text-dark: #1a1a1a;
+  --text-soft-gray: #5c5c5c;
+
+  /* Borders */
+  --line-gold: #e8c874;
+  --line-soft: #ede7d9;
+
+  /* Glow */
+  --glow-gold: rgba(232, 200, 116, 0.45);
+}
+
+/* --------------------------- */
+/* BODY */
+/* --------------------------- */
+
+body {
+  background: linear-gradient(
+    var(--bg-gradient-top),
+    var(--bg-gradient-bottom)
+  );
+  font-family: "Inter", sans-serif;
+  color: var(--text-dark);
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+/* --------------------------- */
+/* HEADER */
+/* --------------------------- */
+
+header {
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-family: "Cinzel", serif;
+  font-size: 3rem;
+  color: var(--gold-primary);
+  text-shadow: 0 0 8px var(--glow-gold);
+}
+
+/* --------------------------- */
+/* SECTION TITLES */
+/* --------------------------- */
+
+h2 {
+  font-family: "Cinzel", serif;
+  font-size: 2rem;
+  color: var(--gold-secondary);
+  border-bottom: 2px solid var(--line-gold);
+  margin-bottom: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+/* --------------------------- */
+/* PARAGRAPHS */
+/* --------------------------- */
+
+p {
+  margin-bottom: 1rem;
+  color: var(--text-soft-gray);
+  font-size: 1.05rem;
+}
+
+/* --------------------------- */
+/* STRONG ELEMENTS */
+/* --------------------------- */
+
+strong {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+/* --------------------------- */
+/* MAIN WRAPPER */
+/* --------------------------- */
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--bg-light);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--line-soft);
+  box-shadow: 0 0 10px var(--glow-gold);
+}
+
+/* --------------------------- */
+/* SECTIONS SPACING */
+/* --------------------------- */
+
+.Name,
+.Purpose,
+.Scenarios,
+.Colo {
+  margin-bottom: 2.5rem;
+}
+
+/* --------------------------- */
+/* LISTS */
+/* --------------------------- */
+
+ul {
+  margin: 1rem 0 1.5rem 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+/* --------------------------- */
+/* COLOR EXAMPLES (OPTIONAL VISUAL BLOCKS) */
+/* --------------------------- */
+
+.color-box {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  margin: 0.5rem 0 1rem;
+  border: 1px solid var(--line-soft);
+}
+
+/* Example classes (optional if you add color boxes) */
+.gold-primary {
+  background: var(--gold-primary);
+}
+.gold-secondary {
+  background: var(--gold-secondary);
+}
+.gold-soft {
+  background: var(--gold-soft);
+}
+.bg-light {
+  background: var(--bg-light);
+}
+.text-dark {
+  background: var(--text-dark);
+}
+.text-soft {
+  background: var(--text-soft-gray);
+}
+img {
+  max-width: 500px;
+  margin-left: 20%;
+}
