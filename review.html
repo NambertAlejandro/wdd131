@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Review Submitted</title>
+
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/style-large.css" />
+
+    <script src="script/review.js" defer></script>
+    <script src="script/footer.js" defer></script>
   </head>
 
   <body>
@@ -18,6 +22,7 @@
 
       <p id="counter"></p>
 
+      <h3>Data Received:</h3>
       <div id="data"></div>
     </main>
 
@@ -26,26 +31,5 @@
       <p>Brazil</p>
       <p>Last Modification: <span id="lastModifiedDate"></span></p>
     </footer>
-
-    <script>
-      document.getElementById("lastModifiedDate").textContent =
-        document.lastModified;
-
-      let count = Number(localStorage.getItem("reviews") || 0);
-      count++;
-      localStorage.setItem("reviews", count);
-
-      document.getElementById("counter").textContent =
-        "Total reviews submitted: " + count;
-
-      const params = new URLSearchParams(window.location.search);
-      let output = "";
-
-      params.forEach((value, key) => {
-        output += `<p><strong>${key}:</strong> ${value}</p>`;
-      });
-
-      document.getElementById("data").innerHTML = output;
-    </script>
   </body>
 </html>

@@ -11,9 +11,11 @@
       content="A form to accomplish the w05 activity, in this form you can qualify and give a feedback about the product that you chose"
     />
 
-    <link rel="stylesheet" href="styles/style-large.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style-large.css" />
+
     <script src="script/form.js" defer></script>
+    <script src="script/footer.js" defer></script>
   </head>
 
   <body>
@@ -22,13 +24,11 @@
     </header>
 
     <main>
-      <!-- FORM ÚNICO -->
       <form method="get" action="review.html">
         <!-- PRODUCT NAME -->
         <h3>Product Name</h3>
         <label for="choose-product">Select a product</label><br />
         <select name="choose-product" id="choose-product" required>
-          <!-- placeholder EXATO que o validador quer -->
           <option value="" disabled selected>Select a Product ...</option>
         </select>
 
@@ -62,7 +62,7 @@
 
         <!-- FEATURES -->
         <h3>
-          Which features did you find useful in the product?<br />
+          Which features did you find useful?<br />
           <i>(Check all that apply)</i>
         </h3>
 
@@ -120,10 +120,5 @@
       <p>Brazil</p>
       <p>Last Modification: <span id="lastModifiedDate"></span></p>
     </footer>
-
-    <script>
-      document.getElementById("lastModifiedDate").textContent =
-        document.lastModified;
-    </script>
   </body>
 </html>
