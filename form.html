@@ -4,84 +4,118 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario HTML</title>
+
     <meta name="author" content="Nambert Alejandro Silva Eleuterio" />
     <meta
       name="description"
       content="A form to accomplish the w05 activity, in this form you can qualify and give a feedback about the product that you chose"
     />
+
     <link rel="stylesheet" href="styles/style-large.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <script src="script/form.js" defer></script>
   </head>
+
   <body>
-    <header><h1>Product Review</h1></header>
+    <header>
+      <h1>Product Review</h1>
+    </header>
+
     <main>
       <form method="get" action="review.html">
-        <div class="product-name">
-          <h3>Product Name</h3>
-          <select name="choose-product" id="choose-product" required>
-            <option value="" disabled selected>Select a Product</option>
-            <option value="keyboard">Keyboard</option>
-            <option value="keyboard">Tv</option>
-            <option value="keyboard">HeadPhone</option>
-            <option value="keyboard">Speaker</option>
-          </select>
-          <h3>Overall Rating</h3>
-          <input type="radio" name="star1" id="star1" />
-          <label for="1star">☆</label>
-          <input type="radio" name="star1" id="star2" />
-          <label for="2star">☆☆</label>
-          <input type="radio" name="star1" id="star3" />
-          <label for="3star">☆☆☆</label>
-          <input type="radio" name="star1" id="star4" />
-          <label for="4star">☆☆☆☆</label>
-          <input type="radio" name="star1" id="star5" />
-          <label for="5star">☆☆☆☆☆</label>
-        </div>
-        <h3>Date of Installation</h3>
-        <div class="date-of-installation">
-          <input type="date" id="installation-date" name="installation-date" />
-        </div>
-        <div class="features">
-          <h3>
-            Wich features did you find useful in the product?<br /><i
-              >(Check all that apply)</i
-            >
-          </h3>
-          <input type="checkbox" name="durability" id="durability" />
-          <label for="durability">Durability</label><br />
-          <input type="checkbox" name="ease-to-use" id="ease-to-use" />
-          <label for="ease-to-use">Ease to Use</label><br />
-          <input type="checkbox" name="performance" id="performance" />
-          <label for="performance">Perfomance</label><br />
-          <input type="checkbox" name="design" id="design" />
-          <label for="design">Design</label><br />
-        </div>
-        <div class="review">
-          <h3>Written Review</h3>
-          <textarea
-            name="review"
-            id="review"
-            rows="5"
-            cols="50"
-            placeholder="Optional"
-          ></textarea>
-        </div>
-        <div class="name">
-          <h3>Your Name</h3>
-          <input type="text" id="name" name="name" placeholder="Optional" />
-        </div>
-        <button value="submit1">Enviar</button>
+        <!-- PRODUCT NAME -->
+        <label for="choose-product"><h3>Product Name</h3></label>
+        <select name="choose-product" id="choose-product" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+
+        <!-- OVERALL RATING -->
+        <h3>Overall Rating</h3>
+
+        <input type="radio" id="star1" name="rating" value="1" required />
+        <label for="star1">☆</label>
+
+        <input type="radio" id="star2" name="rating" value="2" required />
+        <label for="star2">☆☆</label>
+
+        <input type="radio" id="star3" name="rating" value="3" required />
+        <label for="star3">☆☆☆</label>
+
+        <input type="radio" id="star4" name="rating" value="4" required />
+        <label for="star4">☆☆☆☆</label>
+
+        <input type="radio" id="star5" name="rating" value="5" required />
+        <label for="star5">☆☆☆☆☆</label>
+
+        <!-- DATE -->
+        <label for="installation-date"><h3>Date of Installation</h3></label>
+        <input
+          type="date"
+          id="installation-date"
+          name="installation-date"
+          required
+        />
+
+        <!-- FEATURES -->
+        <h3>
+          Which features did you find useful?<br /><i>(Check all that apply)</i>
+        </h3>
+
+        <input
+          type="checkbox"
+          name="features"
+          value="durability"
+          id="durability"
+        />
+        <label for="durability">Durability</label><br />
+
+        <input
+          type="checkbox"
+          name="features"
+          value="ease-to-use"
+          id="ease-to-use"
+        />
+        <label for="ease-to-use">Ease to Use</label><br />
+
+        <input
+          type="checkbox"
+          name="features"
+          value="performance"
+          id="performance"
+        />
+        <label for="performance">Performance</label><br />
+
+        <input type="checkbox" name="features" value="design" id="design" />
+        <label for="design">Design</label><br />
+
+        <!-- WRITTEN REVIEW -->
+        <label for="review"><h3>Written Review</h3></label>
+        <textarea
+          name="review"
+          id="review"
+          rows="5"
+          cols="50"
+          placeholder="Optional"
+        ></textarea>
+
+        <!-- NAME -->
+        <label for="name"><h3>Your Name</h3></label>
+        <input type="text" id="name" name="name" placeholder="Optional" />
+
+        <!-- SUBMIT -->
+        <button type="submit">Enviar</button>
       </form>
     </main>
+
     <footer>
       <p>© 2025 - Nambert A. S. Eleuterio</p>
       <p>Brazil</p>
       <p>Last Modification: <span id="lastModifiedDate"></span></p>
     </footer>
+
     <script>
       document.getElementById("lastModifiedDate").textContent =
-        "Last Modification: " + document.lastModified;
+        document.lastModified;
     </script>
   </body>
 </html>
