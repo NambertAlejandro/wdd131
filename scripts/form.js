@@ -6,8 +6,7 @@ const products = [
 ];
 
 const select = document.getElementById("choose-product");
-
-select.innerHTML = `<option value="" disabled selected>Select a Product...</option>`;
+select.innerHTML = `<option value="" disabled selected>Select a Product ...</option>`;
 
 products.forEach((product) => {
   const opt = document.createElement("option");
@@ -19,7 +18,3 @@ products.forEach((product) => {
 const form = document.querySelector("form");
 form.method = "get";
 form.action = "review.html";
-
-const stars = document.querySelectorAll('input[type="radio"]');
-
-st;
