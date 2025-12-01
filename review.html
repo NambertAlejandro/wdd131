@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style-large.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Review Submitted</h1>
+    </header>
+
+    <main>
+      <h2>Thank you for your review!</h2>
+
+      <p id="counter"></p>
+
+      <div id="data"></div>
+    </main>
+
+    <footer>
+      <p>© 2025 - Nambert A. S. Eleuterio</p>
+      <p>Brazil</p>
+      <p>Last Modification: <span id="lastModifiedDate"></span></p>
+    </footer>
+
+    <script>
+      document.getElementById("lastModifiedDate").textContent =
+        document.lastModified;
+
+      let count = Number(localStorage.getItem("reviews") || 0);
+      count++;
+      localStorage.setItem("reviews", count);
+
+      document.getElementById("counter").textContent =
+        "Total reviews submitted: " + count;
+
+      const params = new URLSearchParams(window.location.search);
+      let output = "";
+
+      params.forEach((value, key) => {
+        output += `<p><strong>${key}:</strong> ${value}</p>`;
+      });
+
+      document.getElementById("data").innerHTML = output;
+    </script>
+  </body>
+</html>
