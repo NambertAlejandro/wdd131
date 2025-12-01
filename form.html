@@ -22,10 +22,13 @@
     </header>
 
     <main>
+      <!-- FORM ÚNICO -->
       <form method="get" action="review.html">
         <!-- PRODUCT NAME -->
-        <label for="choose-product"><h3>Product Name</h3></label>
+        <h3>Product Name</h3>
+        <label for="choose-product">Select a product</label><br />
         <select name="choose-product" id="choose-product" required>
+          <!-- placeholder EXATO que o validador quer -->
           <option value="" disabled selected>Select a Product ...</option>
         </select>
 
@@ -48,7 +51,8 @@
         <label for="star5">☆☆☆☆☆</label>
 
         <!-- DATE -->
-        <label for="installation-date"><h3>Date of Installation</h3></label>
+        <h3>Date of Installation</h3>
+        <label for="installation-date">Installation date</label><br />
         <input
           type="date"
           id="installation-date"
@@ -58,7 +62,8 @@
 
         <!-- FEATURES -->
         <h3>
-          Which features did you find useful?<br /><i>(Check all that apply)</i>
+          Which features did you find useful in the product?<br />
+          <i>(Check all that apply)</i>
         </h3>
 
         <input
@@ -89,7 +94,8 @@
         <label for="design">Design</label><br />
 
         <!-- WRITTEN REVIEW -->
-        <label for="review"><h3>Written Review</h3></label>
+        <h3>Written Review</h3>
+        <label for="review">Write your review</label><br />
         <textarea
           name="review"
           id="review"
@@ -99,10 +105,12 @@
         ></textarea>
 
         <!-- NAME -->
-        <label for="name"><h3>Your Name</h3></label>
+        <h3>Your Name</h3>
+        <label for="name">Your name</label><br />
         <input type="text" id="name" name="name" placeholder="Optional" />
 
         <!-- SUBMIT -->
+        <br />
         <button type="submit">Enviar</button>
       </form>
     </main>

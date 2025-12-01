@@ -6,6 +6,7 @@ const products = [
 ];
 
 const select = document.getElementById("choose-product");
+
 select.innerHTML = `<option value="" disabled selected>Select a Product ...</option>`;
 
 products.forEach((product) => {
@@ -14,7 +15,3 @@ products.forEach((product) => {
   opt.textContent = product.name;
   select.appendChild(opt);
 });
-
-const form = document.querySelector("form");
-form.method = "get";
-form.action = "review.html";
