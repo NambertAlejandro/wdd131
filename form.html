@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario HTML</title>
     <meta name="author" content="Nambert Alejandro Silva Eleuterio" />
-    <meta name="description" content="A form to accomplish the w05 activity" />
+    <meta
+      name="description"
+      content="A form to accomplish the w05 activity, in this form you can qualify and give a feedback about the product that you chose"
+    />
     <link rel="stylesheet" href="styles/style-large.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <script src="script/form.js" defer></script>
@@ -13,11 +16,11 @@
   <body>
     <header><h1>Product Review</h1></header>
     <main>
-      <form>
+      <form method="get" action="review.html">
         <div class="product-name">
           <h3>Product Name</h3>
           <select name="choose-product" id="choose-product" required>
-            <option value="">Choose a Product</option>
+            <option value="" disabled selected>Select a Product</option>
             <option value="keyboard">Keyboard</option>
             <option value="keyboard">Tv</option>
             <option value="keyboard">HeadPhone</option>
@@ -26,13 +29,13 @@
           <h3>Overall Rating</h3>
           <input type="radio" name="star1" id="star1" />
           <label for="1star">☆</label>
-          <input type="radio" name="star2" id="star2" />
+          <input type="radio" name="star1" id="star2" />
           <label for="2star">☆☆</label>
-          <input type="radio" name="star3" id="star3" />
+          <input type="radio" name="star1" id="star3" />
           <label for="3star">☆☆☆</label>
-          <input type="radio" name="star4" id="star4" />
+          <input type="radio" name="star1" id="star4" />
           <label for="4star">☆☆☆☆</label>
-          <input type="radio" name="star5" id="star5" />
+          <input type="radio" name="star1" id="star5" />
           <label for="5star">☆☆☆☆☆</label>
         </div>
         <h3>Date of Installation</h3>
