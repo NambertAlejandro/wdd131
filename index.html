@@ -3,149 +3,164 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ascend Habits - Home</title>
 
-    <!--Tittle of the Page-->
-    <title>Home - Prime Habits</title>
-
-    <!--Author name and description-->
     <meta name="author" content="Nambert Alejandro Silva Eleuterio" />
     <meta
       name="description"
-      content="Prime Habits is a full-stack habit-building platform designed to help users track daily routines, visualize progress, and stay consistent through data-driven insights.
-    The system includes secure authentication, a habits CRUD interface, a personalized dashboard, and a structured API connected to a cloud-hosted database.
-    The goal is to deliver a modern, scalable, and production-ready application aligned with best practices for international software engineering roles."
+      content="Ascend Habits is a habit-building system that helps you grow in four core pillars: Physical, Intellectual, Social, and Spiritual. Track your routines, stay consistent, and rise 1% every day."
     />
 
-    <!--Links of other files-->
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="scripts/script.js" defer></script>
   </head>
-
-  <!--Body f the Project-->
   <body>
-    <!--HTML for the Header-->
-    <header>
+    <header class="site-header">
       <div class="nav-header">
-        <h1>Prime Habits</h1>
-        <nav>
-          <a href="index.html">Home</a>
+        <div class="logo-wrapper">
+          <img
+            src="images/main-logo.jpg"
+            alt="Ascend Habits logo"
+            class="logo-img"
+            loading="lazy"
+          />
+          <h1 class="logo-text">Ascend Habits</h1>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html" class="active">Home</a>
           <a href="habits.html">Habits</a>
-          <a href="about.html">About Us</a>
+          <a href="about.html">About</a>
+          <a href="references.html">References</a>
         </nav>
       </div>
     </header>
 
-    <!--HTML for the Main-->
     <main>
-      <!--Title and Subtitle as a Hook-->
-      <section class="hook">
-        <h2>Title</h2>
-        <p>subtitle</p>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-text">
+          <h2>Rise 1% Every Day</h2>
+          <p>
+            Ascend Habits helps you build consistent routines across four
+            powerful pillars: Physical, Intellectual, Social, and Spiritual.
+            Start small, track your progress, and become the person you are
+            meant to be.
+          </p>
+          <a href="habits.html" class="btn-primary">Start Creating Habits</a>
+          <p id="today-message" class="today-message"></p>
+        </div>
+        <div class="hero-visual">
+          <div class="pillars-circle">
+            <div class="pillar-pill top">Physical</div>
+            <div class="pillar-pill right">Intellectual</div>
+            <div class="pillar-pill bottom">Social</div>
+            <div class="pillar-pill left">Spiritual</div>
+            <div class="center-icon">▲</div>
+          </div>
+        </div>
       </section>
 
-      <!--Categories of Habits-->
-      <!-- Top row of categories -->
-      <section class="categories-row top-row">
-        <div class="category-box">Physical</div>
-        <div class="category-box">Intellectual</div>
+      <!-- PILLARS CARDS -->
+      <section class="pillars-section">
+        <h2 class="section-title">The Four Pillars of Growth</h2>
+        <div class="pillars-grid">
+          <article class="pillar-card">
+            <img
+              src="images/physical.jpg"
+              alt="A person exercising to represent physical habits"
+              loading="lazy"
+            />
+            <h3>Physical</h3>
+            <p>
+              Build habits that strengthen your body: movement, nutrition,
+              sleep, and recovery. Small decisions compound into long-term
+              energy and health.
+            </p>
+          </article>
+
+          <article class="pillar-card">
+            <img
+              src="images/intellectual.png"
+              alt="A person reading or studying to represent intellectual habits"
+              loading="lazy"
+            />
+            <h3>Intellectual</h3>
+            <p>
+              Expand your mind through reading, study, deep work, and constant
+              learning. Your thoughts shape the quality of your decisions.
+            </p>
+          </article>
+
+          <article class="pillar-card">
+            <img
+              src="images/social.jpg"
+              alt="People connecting to represent social habits"
+              loading="lazy"
+            />
+            <h3>Social</h3>
+            <p>
+              Strengthen your relationships with intentional communication,
+              empathy, and presence. Great lives are built on meaningful
+              connections.
+            </p>
+          </article>
+
+          <article class="pillar-card">
+            <img
+              src="images/spiritual.jpg"
+              alt="A peaceful scene representing spiritual habits"
+              loading="lazy"
+            />
+            <h3>Spiritual</h3>
+            <p>
+              Create space for stillness, gratitude, reflection, and purpose.
+              Align your daily actions with what truly matters to you.
+            </p>
+          </article>
+        </div>
       </section>
 
-      <!-- Middle logo -->
-      <section class="middle-circle">
-        <div class="circle-icon">✔</div>
-      </section>
-
-      <!-- Bottom row of categories -->
-      <section class="categories-row bottom-row">
-        <div class="category-box">Social</div>
-        <div class="category-box">Spiritual</div>
-      </section>
-      <!--A brief description for each area-->
-      <section class="categories-description">
-        <article class="category-description">
-          <div class="detail-image">
-            <!-- NO IMAGE YET -->
-            <!-- Later you will place something like: -->
-            <!-- <img src="images/physical.png" alt="Physical habits"> -->
-            <div class="placeholder-img">IMAGE HERE</div>
-          </div>
-
-          <div class="detail-text">
-            <h3>Physical Habits</h3>
+      <!-- HOW IT WORKS -->
+      <section class="how-it-works">
+        <h2 class="section-title">How Ascend Habits Works</h2>
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-number">1</span>
+            <h3>Choose Your Pillar</h3>
             <p>
-              Here you will describe what physical habits are about. This text
-              is temporary. When you choose the images and write the real
-              description, we will update this section.
+              Select where you want to grow first: body, mind, relationships, or
+              spirit.
             </p>
           </div>
-        </article>
-        <article class="category-description">
-          <div class="detail-image">
-            <!-- NO IMAGE YET -->
-            <!-- Later you will place something like: -->
-            <!-- <img src="images/physical.png" alt="Intellectual habits"> -->
-            <div class="placeholder-img">IMAGE HERE</div>
-          </div>
-
-          <div class="detail-text">
-            <h3>Intellectual Habits</h3>
+          <div class="step-card">
+            <span class="step-number">2</span>
+            <h3>Create a Simple Habit</h3>
             <p>
-              Here you will describe what Intellectual habits are about. This
-              text is temporary. When you choose the images and write the real
-              description, we will update this section.
+              Define a small, clear action that you can repeat consistently, not
+              perfectly.
             </p>
           </div>
-        </article>
-        <article class="category-description">
-          <div class="detail-image">
-            <!-- NO IMAGE YET -->
-            <!-- Later you will place something like: -->
-            <!-- <img src="images/physical.png" alt="Social habits"> -->
-            <div class="placeholder-img">IMAGE HERE</div>
-          </div>
-
-          <div class="detail-text">
-            <h3>Social Habits</h3>
+          <div class="step-card">
+            <span class="step-number">3</span>
+            <h3>Track and Adjust</h3>
             <p>
-              Here you will describe what Social habits are about. This text is
-              temporary. When you choose the images and write the real
-              description, we will update this section.
+              Use the Habits page to log your routines, mark completions, and
+              refine over time.
             </p>
           </div>
-        </article>
-        <article class="category-description">
-          <div class="detail-image">
-            <!-- NO IMAGE YET -->
-            <!-- Later you will place something like: -->
-            <!-- <img src="images/physical.png" alt="Spiritual habits"> -->
-            <div class="placeholder-img">IMAGE HERE</div>
-          </div>
-
-          <div class="detail-text">
-            <h3>Spiritual Habits</h3>
-            <p>
-              Here you will describe what Spiritual habits are about. This text
-              is temporary. When you choose the images and write the real
-              description, we will update this section.
-            </p>
-          </div>
-        </article>
+        </div>
       </section>
     </main>
-    <!--HTML for the Footer-->
-    <footer>
-      <p>© 2025 - Nambert A. S. Eleuterio</p>
-      <nav class="nav_footer">
+
+    <footer class="site-footer">
+      <p>© 2025 - Ascend Habits by Nambert A. S. Eleuterio</p>
+      <nav class="footer-nav">
         <a href="index.html">Home</a>
         <a href="habits.html">Habits</a>
-        <a href="about.html">About Us</a>
+        <a href="about.html">About</a>
         <a href="references.html">References</a>
       </nav>
-      <p>Follow us</p>
-      <nav class="social_media_footer">
-        <a href="#">Instagram</a>
-        <a href="#">TikTok</a>
-      </nav>
+      <p class="footer-tagline">Rise one habit at a time.</p>
     </footer>
   </body>
 </html>
